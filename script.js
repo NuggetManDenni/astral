@@ -142,3 +142,7 @@ function loadUpdates() {
     });
 }
 
+ 
+function openRandomSite() {
+
+
