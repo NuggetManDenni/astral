@@ -143,17 +143,3 @@ function loadUpdates() {
 }
 
  
-function openRandomSite()R{
-
- const sites = [
-     "https://etherealneedshelp.netlify.app",
-     "https://etherealneedshelp.netlify.app",
-     "https://coolthingepic.netlify.app",
-     "https://coolthing3.netlify.app",
-     "https://coolman123.netlify.app"
-
-  const randomSite = sites[Math.floor(Math.random() * sites.length)];
-
-     window.open(randomSite, "_blank");
-    
- ];
