@@ -1,2 +1,1 @@
-This is a project me and friend are working on, it's supposed to be a proxy but we are working on it currently and hopefully add games to it.
-Free space link for the boies https://spaceunblocker.vercel.app/
+Astral is a website me and my friends are working on, I have no idea when the full verison will be done, but will happen soon that is a fact. 
