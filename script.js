@@ -151,3 +151,9 @@ function openRandomSite()R{
      "https://coolthingepic.netlify.app",
      "https://coolthing3.netlify.app",
      "https://coolman123.netlify.app"
+
+  const randomSite = sites[Math.floor(Math.random() * sites.length)];
+
+     window.open(randomSite, "_blank");
+    
+ ];
