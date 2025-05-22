@@ -60,29 +60,7 @@
 
      <div class="button-container">
     <a href="https://charming-capybara-53c2c8.netlify.app/" class="space-button">Eaglercrack x  basicly hacks</a>
-       async function lockWebsite() {
-        await fetch("/lock", { method: "POST" });
-        document.body.classList.add("locked");
-        document.getElementById("overlay").style.display = "block";
-    }
-
-    async function unlockWebsite() {
-        const password = document.getElementById("password").value;
-        const response = await fetch("/unlock", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ password })
-        });
-
-        const data = await response.json();
-        if (data.message === "Website unlocked") {
-            document.body.classList.remove("locked");
-            document.getElementById("overlay").style.display = "none";
-        } else {
-            alert("Incorrect password. Try again.");
-        }
-    }
-
+    
     window.onload = checkLockStatus;
 </script>
 
