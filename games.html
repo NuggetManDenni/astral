@@ -41,6 +41,72 @@
 </head>
 <body>
   <iframe src="https://bruhimsodone.netlify.app" title="Eaglercraft 1.12"></iframe>
+
+   <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finn Finn Finn and everybody else screw you</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        /* Fullscreen overlay */
+        #passwordOverlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: white;
+            font-size: 18px;
+        }
+
+        #passwordInput {
+            padding: 10px;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="passwordOverlay">
+        <p>Please enter a password to access the website</p>
+        <input type="password" id="passwordInput" placeholder="Password">
+        <button onclick="authenticate()">Submit</button>
+    </div>
+
+    <h2>Welcome to the Website</h2>
+    <p>Only authorized users can access this content.</p>
+
+    <script>
+        function authenticate() {
+            const correctPassword = "67man"; // Change this to your actual password
+            let userInput = document.getElementById("passwordInput").value;
+
+            if (userInput === correctPassword) {
+                document.getElementById("passwordOverlay").style.display = "none"; // Hide overlay
+            } else {
+                alert("Get out slms");
+            }
+        }
+    </script>
 </body>
 </html>
 
