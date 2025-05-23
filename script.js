@@ -45,7 +45,8 @@ function openRandomSite() {
                 "https://shotbroup.netlify.app/",
                 "https://bruhman12345.netlify.app/",
                 "https://shaneplaysgames.netlify.app/",
-                "https://steelflight.netlify.app/"
+                "https://steelflight.netlify.app/",
+                "https://imreallycool.netlify.app/"
                 
             ];
 
