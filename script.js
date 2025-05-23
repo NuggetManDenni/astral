@@ -41,10 +41,11 @@ function checkPassword() {
 function openRandomSite() {
             // List of random websites
             const sites = [
-                "https://https://mytolietexploded.netlify.app//",
-                "https://https://shotbroup.netlify.app/",
-                "https://https://bruhman12345.netlify.app/",
-                "https://https://shaneplaysgames.netlify.app/"
+                "https://mytolietexploded.netlify.app//",
+                "https://shotbroup.netlify.app/",
+                "https://bruhman12345.netlify.app/",
+                "https://shaneplaysgames.netlify.app/",
+                "https://steelflight.netlify.app/"
                 
             ];
 
