@@ -140,6 +140,48 @@ function loadUpdates() {
             updateBox.classList.add("update-box"); // Apply the curved rectangle class
             updateBox.innerHTML = `<h3>Update from The TALW</h3><p>${updateData.text}</p>`;
             updatesDiv.appendChild(updateBox);
+
+            const chatbox = document.getElementById('chatbox');
+const input = document.getElementById('userInput');
+const button = document.getElementById('sendBtn');
+
+button.onclick = () => {
+  const userText = input.value.trim();
+  if (!userText) return;
+  appendMessage("You", userText);
+  input.value = "";
+  setTimeout(() => {
+    respond(userText);
+  }, 500);
+};
+
+function appendMessage(sender, text) {
+  const message = document.createElement('div');
+  message.innerHTML = `<strong>${sender}:</strong> ${text}`;
+  chatbox.appendChild(message);
+  chatbox.scrollTop = chatbox.scrollHeight;
+}
+
+function respond(input) {
+  let reply = "I'm not sure what you mean...";
+  const responses = {
+    hello: "Hey there, Denni!",
+    help: "You can ask me about dropshipping, websites, or gaming stuff.",
+    minecraft: "Ooooh, Minecraft! Are we talking redstone or recipe hacks?",
+    proxy: "Proxy servers are your specialty—I’d expect nothing less.",
+  };
+
+  for (const keyword in responses) {
+    if (input.toLowerCase().includes(keyword)) {
+      reply = responses[keyword];
+      break;
+    }
+  }
+
+  appendMessage("SpaceBot", reply);
+}
+
+            
         });
     });
 }
